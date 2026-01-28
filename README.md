@@ -1,6 +1,14 @@
 # Git para leigos
 
-## Introdução
+## Índice
+*   [Introdução](#introdução)
+*   [O que é Git?](#o-que-é-git)
+*   [Primeiros Passos](#primeiros-passos)
+*   [Criando um repositório](#criando-um-repositório)
+*
+
+
+# Introdução
 Este repositório é destinado a pessoas que estão dando os primeiros passos no Git e no versionamento de código.
 
 O objetivo é explicar, de forma simples e direta, como funcionam os principais comandos do Git e para que cada um deles serve.
