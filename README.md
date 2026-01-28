@@ -57,3 +57,65 @@ Crie uma conta em uma plataforma web de hospedagem. Neste tutorial, vou utilizar
 ![profile-github.png](assets/images/profile-github.png)
 
 **Ótimo, agora temos o Git instalado e uma conta no GitHub para começar a desenvolver!**
+
+## Criando um repositório
+
+Com uma conta no GitHub, vamos criar um repositório. Basta acessar seu perfil GitHub e acessar a aba repositórios e clicar em **New**.
+
+![New.png](assets/images/new.png)
+
+Para criar um repositório, vamos precisar adicionar um nome a ele, adicionar se ele será público ou privado e se queremos ou não adicionar um README, que é um documento de texto, normalmente é utilizado para adicionar explicações sobre o projeto.
+
+![createRepository.png](assets/images/createRepository.png)
+
+Com o repositório criado vamos ter acesso ao link de clonagem para a maquina local
+
+![repository.png](assets/images/repository.png)
+
+
+## Instalando o Git na maquina
+
+Para instalar, basta acessar:
+* Este link para [instalação do Git no Windows](https://git-scm.com/)
+* Este link para [instalação do Git no Linux](https://git-scm.com/install/linux)
+* Este link para [instalação do Git no Mac](https://git-scm.com/install/mac)
+
+## Configurando o git na maquina local
+
+No seu computador, abra o terminal de comando
+
+### Tutorial de linha de comando
+
+A linha de comando é a principal forma de interagir com o sistema operacional, vamos primeiro nos familiarizar com ela antes de continuar.
+Vamos usar alguns comandos. É importante saber que dependendo do sistema que está executando seja Windows ou Mac, os comandos podem ser diferentes. Porem, linux e o mac possuem o mesmo gerenciador de pacotes *nix, portanto podem ter os mesmos comandos.
+
+| \\*nix (Linux / macOS) | Windows    | O que faz |
+|:----------------------:|:----------:|:----------|
+|         `pwd`          | `echo %cd%`| Mostra o diretório atual (onde você está). |
+|          `ls`          | `dir`      | Lista arquivos e pastas do diretório atual. |
+|          `cd`          | `cd`       | Navega entre diretórios. |
+|          `cp`          | `copy`     | Copia arquivos de um local para outro. |
+|          `mv`          | `move`     | Move ou renomeia arquivos e pastas. |
+|          `rm`          | `del`      | Remove arquivos. |
+|        `rm -r`         | `rmdir /s` | Remove diretórios e seus conteúdos. |
+|        `mkdir`         | `mkdir`    | Cria um novo diretório. |
+|        `clear`         | `cls`      | Limpa a tela do terminal. |
+|          `.`           | `.`        | Representa o diretório atual. |
+|          `..`          | `..`       | Representa o diretório pai (um nível acima). |
+
+
+## Definir variaveis globais git
+
+Quando formos utilizar o git, vamos precisar realizar commits, e precisamos rotular esses commits pára que e possamos saber quando ele foi feito e por quem.
+
+**Diga ao git seu nome:**
+```bash
+git config --global user.name "YOUR NAME"
+```
+
+**Diga ao git o seu endereço de e-mail:**
+```bash
+git config --global user.email "YOUR EMAIL ADDRESS"
+```
+Ótimo agora estamos prontos para subir nosso código!
+
