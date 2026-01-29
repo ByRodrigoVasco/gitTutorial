@@ -310,3 +310,13 @@ git clone <link do repositório>
 ```
 Pronto agora o repositório também estará em sua maquina.
 
+### Fork
+
+Mas e se a gente quiser clonar um repositório remoto para outro repositório remoto?
+
+Tem como! Se chama ``Fork`` é uma ferramenta que basta apertar um botão e puff, o o repositório também aparece em sua conta.
+
+Esse botão é localizado na parte superior direita do repositório:
+
+![Fork.png](assets/images/fork.png)
+
