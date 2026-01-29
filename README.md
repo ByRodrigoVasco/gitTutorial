@@ -34,7 +34,7 @@ O Git é um sistema de controle de versão criado por volta de 2005. Sua origem 
 
 Diante dessa situação, Linus Torvalds, criador do Linux, decidiu desenvolver uma nova ferramenta que atendesse às necessidades da comunidade: rápida, distribuída e de [código aberto](https://aws.amazon.com/pt/what-is/open-source/).
 
-# O que é, de fato, o Git e como ele funciona?
+# Para que serve?
 
 Como foi dito, Git é um controlador de versionamento [open-source](https://aws.amazon.com/pt/what-is/open-source/). Com ele, você controla a versão do seu código, projeto ou trabalhos.
 
