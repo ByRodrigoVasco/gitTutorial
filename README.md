@@ -294,3 +294,19 @@ git push origin "main"
 
 E assim finalizamos o nosso primeiro repositório, primeiro commit, primeiro merge e de quebra ainda aprendemos como funciona todo o fluxo do Git.
 
+### Clonar Repositório
+
+Tá, mas e se eu quiser utilizar esse meu projeto em outra maquina? ou Passar para outros colegas?
+
+Se quiser utilizar esse projeto em outro local basta clonar ele do repositório remoto para sua maquina utilizando o comando ``clone``.
+
+Basta entrar no repositório que deseja, localizar o botão ``code`` na parte direita e copiar o link ``HTTPS``
+
+![img.png](assets/images/Clone.png)
+
+**E usar o seguinte comando ara clonar repositórios:**
+```bash
+git clone <link do repositório>
+```
+Pronto agora o repositório também estará em sua maquina.
+
