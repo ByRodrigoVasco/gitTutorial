@@ -3,9 +3,22 @@
 ## Índice
 *   [Introdução](#introdução)
 *   [O que é Git?](#o-que-é-git)
+* 
 *   [Primeiros Passos](#primeiros-passos)
-*   [Do zero ao merge](#do-zero-ao-merge)
-*
+* * [Criando uma Conta no GitHub](#criando-uma-conta-no-github)
+* * * [Criando um Repositório](#criando-um-repositório)
+* * [Instalando o git](#instalando-o-git-na-maquina)
+* * * [Configurando o Git na Maquina Local](#configurando-o-git-na-maquina-local)
+* 
+*   [Do Zero ao Merge](#do-zero-ao-merge)
+* * [Primeiros Comandos Git](#primeiros-comandos-git)
+* * * [Como o git funciona](#como-o-git-funciona)
+* * * [Primeiro Commit](#primeiro-commit)
+* * * [Branches]()
+* * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
+* 
+* [Conar Repositórios](#clonar-repositório)
+* [Fork](#fork)
 
 
 # Introdução
@@ -79,7 +92,7 @@ Para instalar, basta acessar:
 
 No seu computador, abra o terminal de comando
 
-### Tutorial de linha de comando
+## Tutorial de linha de comando
 
 A linha de comando é a principal forma de interagir com o sistema operacional, vamos primeiro nos familiarizar com ela antes de continuar.
 Vamos usar alguns comandos. É importante saber que dependendo do sistema que está executando seja Windows ou Mac, os comandos podem ser diferentes. Porem, linux e o mac possuem o mesmo gerenciador de pacotes *nix, portanto podem ter os mesmos comandos.
@@ -201,6 +214,7 @@ Aqui o git:
 
 **Editar -> Preparar -> Registrar**
 
+## Primeiro Commit
 Atualmente estamos no Working directory, podemos vizualizar o estado dos arquivos com o comando:
 
 ```bash
@@ -232,6 +246,7 @@ git log
 ```
 ![GitLog.png](assets/images/GitLog.png)
 
+## Branches
 Existe uma forma de criar uma linha paralela de desenvolvimento que permite criar novas funcionalidades sem afetar o registro principal, chamamos isso de Branches (Ramificações).
 Normalmente trabalhamos em branches separadas da principal para evitar conflitos de código, erros inesperados e até para testar novas ideias sem interferir com a ramificação principal.
 
@@ -295,7 +310,7 @@ git push origin "main"
 
 E assim finalizamos o nosso primeiro repositório, primeiro commit, primeiro merge e de quebra ainda aprendemos como funciona todo o fluxo do Git.
 
-### Clonar Repositório
+# Clonar Repositório
 
 Tá, mas e se eu quiser utilizar esse meu projeto em outra maquina? ou Passar para outros colegas?
 
@@ -311,7 +326,7 @@ git clone <link do repositório>
 ```
 Pronto agora o repositório também estará em sua maquina.
 
-### Fork
+# Fork
 
 Mas e se a gente quiser clonar um repositório remoto para outro repositório remoto?
 
