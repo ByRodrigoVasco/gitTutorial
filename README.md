@@ -302,7 +302,7 @@ Se quiser utilizar esse projeto em outro local basta clonar ele do repositório 
 
 Basta entrar no repositório que deseja, localizar o botão ``code`` na parte direita e copiar o link ``HTTPS``
 
-![img.png](assets/images/Clone.png)
+![Clone.png](assets/images/Clone.png)
 
 **E usar o seguinte comando ara clonar repositórios:**
 ```bash
