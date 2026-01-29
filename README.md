@@ -162,7 +162,8 @@ git init
 Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja vizualizando ative os arquivos ocultos.
 É nessa pasta que toda mágica do git acontece, **então não apague**.
 
-Agora vamos entender o fluxo de trabalho do git:
+### Como o git funciona
+Agora vamos entender como a **mágica** do git funciona:
 
 A imagem abaixo demonstra como o fluxo básico de trabalho do Git funciona.
 ![GitWorking.png](assets/images/GitWorking.png)
