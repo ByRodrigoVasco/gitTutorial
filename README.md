@@ -17,7 +17,7 @@
 * * * [Branches](#branches)
 * * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
 * 
-* [Conar Repositórios](#clonar-repositório)
+* [Conar Repositórios](#clonar-um-repositório)
 * [Fork](#fork)
 * * [Deixar sua Assinatura](#assinar-projeto)
 
@@ -354,7 +354,7 @@ Agora Basta seguir os passos que aprendeu
 
 1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-repositório).
 2. Criar uma branch seguindo os passos de como [Criar uma Branch](#branches).
-3. Acessar o arquivo [ASSINATURA.md](ASSINATURAS.md).
+3. Acessar o arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
 4. Deixar sua assinatura seguindo os passos do arquivo.
 5. Registrar commit da alteração seguindo os passos do [primeiro commit](#primeiro-commit).
 6. Subir para o repositório remoto seguindo os passos de como [Adicionar ao repositório remoto](#adicionando-ao-repositório-remoto)
