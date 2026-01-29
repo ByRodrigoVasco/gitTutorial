@@ -17,8 +17,9 @@
 * * * [Branches](#branches)
 * * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
 * 
-* [Conar Repositórios](#clonar-repositório)
+* [Conar Repositórios](#clonar-um-repositório)
 * [Fork](#fork)
+* * [Deixar sua Assinatura](#assinar-projeto)
 
 
 # Introdução
@@ -266,7 +267,7 @@ git checkout "nome-da-branch"
 ```
 Agora adicione uma novas alterações no arquivo README.md ou adicione novos e faça um novo commit nessa nova branch para praticar.
 
-### Adicionando ao repositório remoto
+## Adicionando ao repositório remoto
 
 Por fim vamos jogar nossos commits do repositório local para o repositório remoto criado no passo [Criando um repositório](#criando-um-repositório).
 
@@ -310,7 +311,7 @@ git push origin "main"
 
 E assim finalizamos o nosso primeiro repositório, primeiro commit, primeiro merge e de quebra ainda aprendemos como funciona todo o fluxo do Git.
 
-# Clonar Repositório
+# Clonar um Repositório
 
 Tá, mas e se eu quiser utilizar esse meu projeto em outra maquina? ou Passar para outros colegas?
 
@@ -328,11 +329,46 @@ Pronto agora o repositório também estará em sua maquina.
 
 # Fork
 
-Mas e se a gente quiser clonar um repositório remoto para outro repositório remoto?
+Mas e se a gente quiser clonar um repositório remoto que não é meu para minha conta GitHub?
 
-Tem como! Se chama ``Fork`` é uma ferramenta que basta apertar um botão e puff, o o repositório também aparece em sua conta.
+É possível! Isso se chama ``Fork`` é uma ferramenta que basta apertar um botão e puff, o repositório também aparece em sua conta, e agora também é seu e você pode contribuir com o repositório original.
 
-Esse botão é localizado na parte superior direita do repositório:
+Vamos testar com esse repositório de tutorial? 
+
+### Assinar projeto
+Hora de praticar tudo que aprendeu até aqui.
+
+```Deixe a sua assinatura nesse repositório seguindo os passos abaixo```
+
+
+O botão do ``Fork`` é localizado na parte superior direita do repositório, como na imagem abaixo:
 
 ![Fork.png](assets/images/fork.png)
 
+Após clicar nele você será redirecionado para a pagina de criação do fork, basta confirmar:
+
+![img.png](assets/images/createFork.png)
+
+
+Agora Basta seguir os passos que aprendeu
+
+1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-repositório).
+2. Criar uma branch seguindo os passos de como [Criar uma Branch](#branches).
+3. Acessar o arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
+4. Deixar sua assinatura seguindo os passos do arquivo.
+5. Registrar commit da alteração seguindo os passos do [primeiro commit](#primeiro-commit).
+6. Subir para o repositório remoto seguindo os passos de como [Adicionar ao repositório remoto](#adicionando-ao-repositório-remoto)
+
+Após finalizar retorne ao repositório no GitHub. O fork sempre tentará comparar o código com o repositório original, então assim que subir a sua branch nova ele irá recomendar a criação de um pull request no repositório original.
+
+Clique em ``Compare & pull request``
+
+![PR.png](assets/images/PullRequest.png)
+
+Basta adicionar um titulo e clicar em ``Create pull request``.
+
+![CreatePR.png](assets/images/CreatePR.png)
+
+**Pronto! Missão concluida com sucesso!** 
+
+### Sempre que possível irei atualizar esse repositório com a assinatura dos participantes!
