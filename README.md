@@ -229,7 +229,7 @@ Pronto agora seu codigo está registrado. Esse e outros registros podem ser vizu
 ```bash
 git log
 ```
-![img.png](assets/images/GitLog.png)
+![GitLog.png](assets/images/GitLog.png)
 
 Existe uma forma de criar uma linha paralela de desenvolvimento que permite criar novas funcionalidades sem afetar o registro principal, chamamos isso de Branches (Ramificações).
 Normalmente trabalhamos em branches separadas da principal para evitar conflitos de código, erros inesperados e até para testar novas ideias sem interferir com a ramificação principal.
