@@ -14,7 +14,7 @@
 * * [Primeiros Comandos Git](#primeiros-comandos-git)
 * * * [Como o git funciona](#como-o-git-funciona)
 * * * [Primeiro Commit](#primeiro-commit)
-* * * [Branches]()
+* * * [Branches](#branches)
 * * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
 * 
 * [Conar Repositórios](#clonar-repositório)
