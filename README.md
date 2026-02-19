@@ -17,7 +17,7 @@
 * * * [Branches](#branches)
 * * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
 * 
-* [Conar Repositórios](#clonar-um-repositório)
+* [ Clonar um Repositório](#clonar-um-repositório)
 * [Fork](#fork)
 * * [Deixar sua Assinatura](#assinar-projeto)
 
@@ -225,7 +225,7 @@ git status
 Para passar nossos arquivos para o staging area utilizamos o comando:
 
 ```bash
-git add ".\README.md"
+git add "README.md"
 ```
 
 Ao utilizar o comando de status novamente, podemos ver que o arquivo foi adicionado ao saging area e está aguardando o proximo commit.
