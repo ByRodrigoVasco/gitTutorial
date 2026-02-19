@@ -251,6 +251,20 @@ git log
 Existe uma forma de criar uma linha paralela de desenvolvimento que permite criar novas funcionalidades sem afetar o registro principal, chamamos isso de Branches (Ramificações).
 Normalmente trabalhamos em branches separadas da principal para evitar conflitos de código, erros inesperados e até para testar novas ideias sem interferir com a ramificação principal.
 
+### O que é HEAD?
+
+Antes de trabalhar com branches, é importante entender um conceito fundamental: o **HEAD**. 
+
+O HEAD é um "apontador" (pointer) que indica qual é a **branch atual em que você está trabalhando**. Pense no HEAD como um marcador que diz "você está aqui".
+
+Quando você executa o comando `git checkout` para mudar de branch, o HEAD "se move" para apontar para a nova branch. Por exemplo:
+
+- Você está na branch `main` → HEAD aponta para `main`
+- Você executa `git checkout "minha-branch"` → HEAD agora aponta para `minha-branch`
+- Qualquer novo commit que você fizer será adicionado onde o HEAD está apontando
+
+Você pode sempre verificar em qual branch (ou seja, onde o HEAD está apontando) usando o comando `git status`. Ele vai te mostrar algo como: `On branch main` ou `On branch minha-branch`.
+
 **Comando para criar a ramificação:**
 ```bash
 git branch "nome-da-minha-branch"
