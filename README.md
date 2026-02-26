@@ -141,7 +141,7 @@ Agora com o git instalado e com uma conta criada no GitHub podemos dar inicio ao
 
 ### Vamos começar criando um do absoluto zero:
 
-1. Crie uma pasta no seu computador, pode adicionar o nome que quiser, ele será o nome seu projeto:
+1. Crie uma pasta no seu computador, pode adicionar o nome que quiser, ele será o nome do seu projeto:
 
 **Por [linha de comando](#tutorial-de-linha-de-comando):**
 ```bash
@@ -175,6 +175,64 @@ git init
 
 Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja visualizando ative os arquivos ocultos.
 É nessa pasta que toda mágica do git acontece, **então não apague**.
+
+### O arquivo .gitignore
+
+Antes de continuar, é **muito importante** falar sobre o arquivo ``.gitignore``. Este arquivo especial diz ao Git quais arquivos ou pastas ele deve **ignorar** e nunca versionar.
+
+**Por que isso é crucial?**
+
+Existem arquivos que você **NUNCA** deve adicionar ao repositório, repetindo **NUUNCA** deve adicionar ao repositório, como por exemplo:
+- **Senhas e chaves secretas** (arquivos `.env`, `config.json` com credenciais)
+- **Dependências** (pasta `node_modules/`, `venv/`, `vendor/`)
+- **Arquivos de configuração da IDE** (`.idea/`, `.vscode/`, `.vs/`)
+- **Arquivos de build** (pasta `dist/`, `build/`, `target/`)
+- Entre outros...
+
+**Como criar um .gitignore:**
+
+Na raiz do seu projeto, caso não encontre, crie um arquivo chamado `.gitignore` e adicione os padrões que deseja ignorar:
+
+```gitignore
+# Dependências
+node_modules/
+venv/
+__pycache__/
+
+# Variáveis de ambiente (SENHAS!)
+.env
+.env.local
+config.json
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.swp
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.log
+```
+
+**Exemplo pelo terminal:**
+
+```bash
+# Criar o arquivo .gitignore
+echo "node_modules/" > .gitignore
+echo ".env" >> .gitignore
+```
+
+Depois de criar o `.gitignore`, o correto é adicionar ele ao staging area e realizar um commit para que ele passe a fazer parte do histórico do projeto e atuar como um filtro para os arquivos que não devem ser versionados.
+
+
+**Dica:** Você pode encontrar templates prontos de `.gitignore` para diferentes linguagens em [gitignore.io](https://www.toptal.com/developers/gitignore/)
+
+**IMPORTANTE:** Se você já commitou um arquivo que deveria ser ignorado, apenas adicionar no `.gitignore` não vai removê-lo do histórico. Você precisará usar `git rm --cached nome-do-arquivo` para removê-lo do rastreamento.
 
 ### Como o git funciona
 Agora vamos entender como a **mágica** do git funciona:
@@ -226,6 +284,12 @@ Para passar nossos arquivos para o staging area utilizamos o comando:
 
 ```bash
 git add "README.md"
+```
+
+Se quiser adicionar tudo de uma vez (todos os arquivos modificados no diretorio atual), use:
+
+```bash
+git add .
 ```
 
 Ao utilizar o comando de status novamente, podemos ver que o arquivo foi adicionado ao saging area e está aguardando o proximo commit.
@@ -281,6 +345,77 @@ git checkout "nome-da-branch"
 ```
 Agora adicione uma novas alterações no arquivo README.md ou adicione novos e faça um novo commit nessa nova branch para praticar.
 
+### Guardando alterações temporariamente com git stash
+
+Vão existir stuações onde você está trabalhando em uma branch e fez várias alterações, mas **ainda não está pronto para fazer commit**. De repente, você precisa **trocar de branch urgentemente** para corrigir um bug. O que fazer?
+
+Se você tentar trocar de branch com alterações não commitadas, o Git dará um erro reclamando ou vai misturar suas alterações com a outra branch e criar uma bagunça, e podendo causar a perda de horas de trabalho em código. É aí que entra o **git stash**!
+
+**O que é git stash?**
+
+O `git stash` é como uma "gaveta temporária" onde você pode guardar suas alterações sem fazer commit. Depois você pode recuperá-las quando quiser.
+
+**Comandos:**
+
+```bash
+# Guardar alterações atuais temporariamente
+git stash
+
+# Ou guardar com uma mensagem descritiva
+git stash save "trabalho em andamento na página de login"
+```
+
+Quando você executa isso, suas alterações são guardadas e seu Working Directory fica limpo, como se você não tivesse alterado nada. Agora você pode trocar de branch tranquilamente!
+
+**Recuperando as alterações:**
+
+```bash
+# Recuperar a última alteração guardada e REMOVER do stash
+git stash pop
+
+# Ou recuperar sem remover do stash
+git stash apply
+```
+
+**Outros comandos do stash que são úteis:**
+
+```bash
+# Ver lista de tudo que está no stash
+git stash list
+
+# Recuperar um stash específico (o número você vê no 'list')
+git stash apply stash@{0}
+
+# Deletar um stash específico
+git stash drop stash@{0}
+
+# Limpar TODOS os stashes
+git stash clear
+```
+
+**Exemplo de como seria o uso na prática:**
+
+```bash
+# Você está na branch 'feature' e fez alterações
+git status
+# (mostra arquivos modificados)
+
+# Guardar tudo temporariamente
+git stash save "alterações na tela de login"
+
+# Trocar para branch principal para corrigir bug
+git checkout main
+# (faz a correção e commit)
+
+# Voltar para sua branch
+git checkout feature
+
+# Recuperar seu trabalho
+git stash pop
+
+# Continuar trabalhando de onde parou!
+```
+
 ## Adicionando ao repositório remoto
 
 Por fim vamos jogar nossos commits do repositório local para o repositório remoto criado no passo [Criando um repositório](#criando-um-repositório).
@@ -290,11 +425,15 @@ O primeiro passo é associar o repositório local ao remoto utilizando o seguint
 ```bash
 git remote add origin <link do repositório>
 ```
-``origin`` é o apelido que daremos ao local que estamos subindo nosso repositório.
+``origin`` é o apelido por padrão que daremos ao local que estamos subindo nosso repositório.
 
 Por fim com o nosso repositório local conectado ao remoto do GitHub podemos "empurrar" nossas alterações com o comando ``push``.
 
-*IMPORTANTE:* Antes de realizar o push, precisamos ``SEMPRE`` alinhar o nosso repositório local com o remoto para evitar conflitos, para isso usamos o comando ``pull``.
+*IMPORTANTE:* Antes de realizar o push, precisamos ``SEMPRE`` alinhar o nosso repositório local com o remoto para evitar conflitos, para isso usamos o comando ``fetch`` e ``pull``.
+
+```bash
+git fetch origin
+```
 
 ```bash
 git pull origin "nome-da-branch"
@@ -305,6 +444,44 @@ Logo em seguida com tudo pronto, podemos finalmente subir as alterações com o 
 ```bash
 git push origin "nome-da-branch"
 ```
+
+### Entendendo melhor o git fetch e o git pull
+
+Agora que você já conhece o `git pull`, é importante entender a diferença entre **git fetch** e **git pull**.
+
+**Git Fetch - É utilizado para "Espiar" o que foi feito no remoto**
+
+O `git fetch` **baixa** as alterações do repositório remoto, mas **NÃO** as mescla automaticamente com seu código local. É como "espiar" o que tem de novo sem alterar nada do seu trabalho.
+
+```bash
+# Baixar informações do remoto sem mesclar
+git fetch origin
+
+# Baixar de uma branch específica
+git fetch origin main
+```
+
+Depois de fazer `git fetch`, você pode:
+- Ver o que mudou sem afetar seu código
+- Decidir se quer ou não mesclar
+- Comparar as diferenças
+
+Utilizem sempre antes de fazer um `git pull` para revisar as mudanças e evitar dor de cabeça depois! ~~Quem avisa amigo é!~~
+
+**Git Pull - Baixar E mesclar automaticamente**
+
+O `git pull` é na verdade uma **combinação** de dois comandos:
+
+```bash
+git pull = git fetch + git merge
+```
+
+Ou seja, quando você faz `git pull`, o Git:
+1. Baixa as alterações do remoto (fetch)
+2. Imediatamente mescla com sua branch atual (merge)
+
+
+**Dica:** Sempre use o `git fetch` primeiro quando estiver trabalhando em equipe e quiser revisar as mudanças antes de mesclar.
 
 Agora vamos aprender a mesclar ramficações, unir uma branch na outra. Vamos unir nossa branch criada com a nossa main. Basta utilizar os seguintes comandos:
 
@@ -340,6 +517,16 @@ Basta entrar no repositório que deseja, localizar o botão ``code`` na parte di
 git clone <link do repositório>
 ```
 Pronto agora o repositório também estará em sua maquina.
+
+# Pull Request - O que é e por que importa?
+
+Antes de aprendermos sobre Fork e contribuições, é fundamental entender o **Pull Request** o famoso PR.
+
+## O que É um Pull Request?
+
+Um Pull Request é um pedido formal de contribuição. É você dizendo ao mantenedor do projeto original: "Olá! Eu fiz umas melhorias/correções no código. Você poderia revisar e, se achar bom, incorporar no projeto?"
+
+Não é um "push direto" porque existe um processo de **revisão e aprovação** antes de suas mudanças entrarem no projeto principal.
 
 # Fork
 
@@ -379,10 +566,13 @@ Clique em ``Compare & pull request``
 
 ![PR.png](assets/images/PullRequest.png)
 
-Basta adicionar um titulo e clicar em ``Create pull request``.
+Basta adicionar um titulo e uma descrição e clicar em ``Create pull request``.
 
 ![CreatePR.png](assets/images/CreatePR.png)
 
 **Pronto! Missão concluida com sucesso!** 
 
 ### Sempre que possível irei atualizar esse repositório com a assinatura dos participantes!
+
+
+Se chegou até aqui, primeiramente obrigado por ter tido a paciencia de ler tudo, e segundamente, parabéns por ter dado os primeiros passos nesse mundo de bruxaria do git.
