@@ -366,7 +366,7 @@ Após clicar nele você será redirecionado para a pagina de criação do fork, 
 
 Agora Basta seguir os passos que aprendeu
 
-1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-repositório).
+1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-um-repositório).
 2. Criar uma branch seguindo os passos de como [Criar uma Branch](#branches).
 3. Acessar o arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
 4. Deixar sua assinatura seguindo os passos do arquivo.
