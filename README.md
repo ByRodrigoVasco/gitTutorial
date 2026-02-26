@@ -216,7 +216,7 @@ Aqui o git:
 **Editar -> Preparar -> Registrar**
 
 ## Primeiro Commit
-Atualmente estamos no Working directory, podemos vizualizar o estado dos arquivos com o comando:
+Atualmente estamos no Working directory, podemos visualizar o estado dos arquivos com o comando:
 
 ```bash
 git status
