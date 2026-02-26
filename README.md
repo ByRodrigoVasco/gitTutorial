@@ -292,7 +292,7 @@ git remote add origin <link do repositório>
 ```
 ``origin`` é o apelido que daremos ao local que estamos subindo nosso repositório.
 
-Por fim com o nosso repositório local conectaco ao remoto do GitHub podemos "empurrar" nossas alterações com o comando ``push``.
+Por fim com o nosso repositório local conectado ao remoto do GitHub podemos "empurrar" nossas alterações com o comando ``push``.
 
 *IMPORTANTE:* Antes de realizar o push, precisamos ``SEMPRE`` alinhar o nosso repositório local com o remoto para evitar conflitos, para isso usamos o comando ``pull``.
 
