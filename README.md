@@ -308,7 +308,6 @@ A imagem abaixo demonstra como o fluxo básico de trabalho do Git funciona.
 
 É onde você está agora, onde o trabalho realmente acontece, aqui você pode:
 
-* Criar arquivs
 * Criar arquivos
 * Editar códigos
 * Apagar coisas
