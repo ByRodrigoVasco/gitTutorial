@@ -661,8 +661,6 @@ Agora basta seguir os passos que aprendeu:
 
 ### Criar o Pull Request
 
-### Criar o Pull Request
-
 Após finalizar retorne ao repositório no GitHub. O fork sempre tentará comparar o código com o repositório original, então assim que subir a sua branch nova ele irá recomendar a criação de um pull request no repositório original.
 
 **Clicar em** ``Compare & pull request``
