@@ -286,6 +286,12 @@ Para passar nossos arquivos para o staging area utilizamos o comando:
 git add ".\README.md"
 ```
 
+Se quiser adicionar tudo de uma vez (todos os arquivos modificados no diretorio atual), use:
+
+```bash
+git add .
+```
+
 Ao utilizar o comando de status novamente, podemos ver que o arquivo foi adicionado ao saging area e está aguardando o proximo commit.
 
 ```bash
