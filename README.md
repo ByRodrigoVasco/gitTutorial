@@ -375,7 +375,7 @@ Isso faz com que o nosso ``README.md`` passe para staging area onde podemos regi
 git commit -m "initial commit"
 ```
 
-Pronto agora seu codigo está registrado. Esse e outros registros podem ser vizualizados com o comando:
+Pronto agora seu codigo está registrado. Esse e outros registros podem ser visualizados com o comando:
 
 ```bash
 git log
