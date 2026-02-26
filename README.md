@@ -185,9 +185,9 @@ A imagem abaixo demonstra como o fluxo básico de trabalho do Git funciona.
 ### 1. Working Directory
 
 É onde você está agora, onde o trabalho realmente acontece, aqui você pode:
-* Criar arquivs
+* Criar arquivos
 * Editar códigos
-* apagar coisas
+* Apagar coisas
 * testar ideias
 
 Nada que é feito aqui está salvo no histórico do Git, ainda. São apenas mudanças locais.
