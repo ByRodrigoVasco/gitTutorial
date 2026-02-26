@@ -363,7 +363,7 @@ Se quiser adicionar tudo de uma vez (todos os arquivos modificados no diretorio 
 git add .
 ```
 
-Ao utilizar o comando de status novamente, podemos ver que o arquivo foi adicionado ao saging area e está aguardando o proximo commit.
+Ao utilizar o comando de status novamente, podemos ver que o arquivo foi adicionado ao staging area e está aguardando o proximo commit.
 
 ```bash
 git status
