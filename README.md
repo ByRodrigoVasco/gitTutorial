@@ -39,16 +39,6 @@
     *   [Deixar sua Assinatura](#assinar-projeto)
 
 ---
-* * [Primeiros Comandos Git](#primeiros-comandos-git)
-* * * [Como o git funciona](#como-o-git-funciona)
-* * * [Primeiro Commit](#primeiro-commit)
-* * * [Branches](#branches)
-* * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
-* 
-* [ Clonar um Repositório](#clonar-um-repositório)
-* [Fork](#fork)
-* * [Deixar sua Assinatura](#assinar-projeto)
-
 
 # Introdução
 
