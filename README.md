@@ -335,7 +335,7 @@ Basta entrar no repositório que deseja, localizar o botão ``code`` na parte di
 
 ![Clone.png](assets/images/Clone.png)
 
-**E usar o seguinte comando ara clonar repositórios:**
+**E usar o seguinte comando para clonar repositórios:**
 ```bash
 git clone <link do repositório>
 ```
