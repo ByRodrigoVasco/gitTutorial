@@ -552,10 +552,13 @@ Clique em ``Compare & pull request``
 
 ![PR.png](assets/images/PullRequest.png)
 
-Basta adicionar um titulo e clicar em ``Create pull request``.
+Basta adicionar um titulo e uma descrição e clicar em ``Create pull request``.
 
 ![CreatePR.png](assets/images/CreatePR.png)
 
 **Pronto! Missão concluida com sucesso!** 
 
 ### Sempre que possível irei atualizar esse repositório com a assinatura dos participantes!
+
+
+Se chegou até aqui, primeiramente obrigado por ter tido a paciencia de ler tudo, e segundamente, parabéns por ter dado os primeiros passos nesse mundo de bruxaria do git.
