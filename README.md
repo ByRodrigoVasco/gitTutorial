@@ -39,6 +39,15 @@
     *   [Deixar sua Assinatura](#assinar-projeto)
 
 ---
+* * [Primeiros Comandos Git](#primeiros-comandos-git)
+* * * [Como o git funciona](#como-o-git-funciona)
+* * * [Primeiro Commit](#primeiro-commit)
+* * * [Branches](#branches)
+* * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
+* 
+* [ Clonar um Repositório](#clonar-um-repositório)
+* [Fork](#fork)
+* * [Deixar sua Assinatura](#assinar-projeto)
 
 
 # Introdução
@@ -235,6 +244,8 @@ git init
 > Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja vizualizando ative os arquivos ocultos. É nessa pasta que toda mágica do git acontece, **então não apague**.
 
 ---
+Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja visualizando ative os arquivos ocultos.
+É nessa pasta que toda mágica do git acontece, **então não apague**.
 
 ### O arquivo .gitignore
 
@@ -310,8 +321,9 @@ A imagem abaixo demonstra como o fluxo básico de trabalho do Git funciona.
 É onde você está agora, onde o trabalho realmente acontece, aqui você pode:
 
 * Criar arquivs
+* Criar arquivos
 * Editar códigos
-* apagar coisas
+* Apagar coisas
 * testar ideias
 
 Nada que é feito aqui está salvo no histórico do Git, ainda. São apenas mudanças locais.
@@ -347,6 +359,7 @@ Aqui o git:
 ## Primeiro Commit
 
 Atualmente estamos no Working directory, podemos vizualizar o estado dos arquivos com o comando:
+Atualmente estamos no Working directory, podemos visualizar o estado dos arquivos com o comando:
 
 ```bash
 git status
@@ -355,7 +368,7 @@ git status
 Para passar nossos arquivos para o staging area utilizamos o comando:
 
 ```bash
-git add ".\README.md"
+git add "README.md"
 ```
 
 Se quiser adicionar tudo de uma vez (todos os arquivos modificados no diretorio atual), use:
@@ -392,6 +405,21 @@ Normalmente trabalhamos em branches separadas da principal para evitar conflitos
 ### Comandos principais:
 
 **Criar uma nova branch:**
+### O que é HEAD?
+
+Antes de trabalhar com branches, é importante entender um conceito fundamental: o **HEAD**. 
+
+O HEAD é um "apontador" (pointer) que indica qual é a **branch atual em que você está trabalhando**. Pense no HEAD como um marcador que diz "você está aqui".
+
+Quando você executa o comando `git checkout` para mudar de branch, o HEAD "se move" para apontar para a nova branch. Por exemplo:
+
+- Você está na branch `main` → HEAD aponta para `main`
+- Você executa `git checkout "minha-branch"` → HEAD agora aponta para `minha-branch`
+- Qualquer novo commit que você fizer será adicionado onde o HEAD está apontando
+
+Você pode sempre verificar em qual branch (ou seja, onde o HEAD está apontando) usando o comando `git status`. Ele vai te mostrar algo como: `On branch main` ou `On branch minha-branch`.
+
+**Comando para criar a ramificação:**
 ```bash
 git branch "nome-da-minha-branch"
 ```
@@ -496,6 +524,7 @@ git remote add origin <link do repositório>
 ```
 
 > **Nota:** ``origin`` é o apelido por padrão que daremos ao local que estamos subindo nosso repositório.
+Por fim com o nosso repositório local conectado ao remoto do GitHub podemos "empurrar" nossas alterações com o comando ``push``.
 
 ### Passo 2: Alinhar repositório local com o remoto
 
@@ -600,6 +629,7 @@ Basta entrar no repositório que deseja, localizar o botão ``code`` na parte di
 ![Clone.png](assets/images/Clone.png)
 
 **Usar o seguinte comando para clonar repositórios:**
+**E usar o seguinte comando para clonar repositórios:**
 ```bash
 git clone <link do repositório>
 ```
@@ -660,6 +690,12 @@ Agora basta seguir os passos que aprendeu:
 **6.** Subir para o repositório remoto seguindo os passos de como [Adicionar ao repositório remoto](#adicionando-ao-repositório-remoto)
 
 ### Criar o Pull Request
+1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-um-repositório).
+2. Criar uma branch seguindo os passos de como [Criar uma Branch](#branches).
+3. Acessar o arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
+4. Deixar sua assinatura seguindo os passos do arquivo.
+5. Registrar commit da alteração seguindo os passos do [primeiro commit](#primeiro-commit).
+6. Subir para o repositório remoto seguindo os passos de como [Adicionar ao repositório remoto](#adicionando-ao-repositório-remoto)
 
 Após finalizar retorne ao repositório no GitHub. O fork sempre tentará comparar o código com o repositório original, então assim que subir a sua branch nova ele irá recomendar a criação de um pull request no repositório original.
 

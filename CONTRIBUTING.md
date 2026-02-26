@@ -1,7 +1,7 @@
 # Mural de Assinaturas
 
 ### Seguir o seguinte exemplo:
-```aiignore
+```
 ## Nome e Sobrenome - Data da assinatura
 - Sua Descrição
 - E-mail: 
