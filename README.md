@@ -504,6 +504,16 @@ git clone <link do repositório>
 ```
 Pronto agora o repositório também estará em sua maquina.
 
+# Pull Request - O que é e por que importa?
+
+Antes de aprendermos sobre Fork e contribuições, é fundamental entender o **Pull Request** o famoso PR.
+
+## O que É um Pull Request?
+
+Um Pull Request é um pedido formal de contribuição. É você dizendo ao mantenedor do projeto original: "Olá! Eu fiz umas melhorias/correções no código. Você poderia revisar e, se achar bom, incorporar no projeto?"
+
+Não é um "push direto" porque existe um processo de **revisão e aprovação** antes de suas mudanças entrarem no projeto principal.
+
 # Fork
 
 Mas e se a gente quiser clonar um repositório remoto que não é meu para minha conta GitHub?
