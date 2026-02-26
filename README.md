@@ -579,8 +579,6 @@ Ou seja, quando você faz `git pull`, o Git:
 
 ### Mesclando branches (merge)
 
-### Mesclando branches (merge)
-
 Agora vamos aprender a mesclar ramificações, unir uma branch na outra. Vamos unir nossa branch criada com a nossa main. Basta utilizar os seguintes comandos:
 
 **Trocar de branch:**
