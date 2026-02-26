@@ -613,7 +613,6 @@ Basta entrar no repositório que deseja, localizar o botão ``code`` na parte di
 ![Clone.png](assets/images/Clone.png)
 
 **Usar o seguinte comando para clonar repositórios:**
-**E usar o seguinte comando para clonar repositórios:**
 ```bash
 git clone <link do repositório>
 ```
@@ -674,12 +673,6 @@ Agora basta seguir os passos que aprendeu:
 **6.** Subir para o repositório remoto seguindo os passos de como [Adicionar ao repositório remoto](#adicionando-ao-repositório-remoto)
 
 ### Criar o Pull Request
-1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-um-repositório).
-2. Criar uma branch seguindo os passos de como [Criar uma Branch](#branches).
-3. Acessar o arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
-4. Deixar sua assinatura seguindo os passos do arquivo.
-5. Registrar commit da alteração seguindo os passos do [primeiro commit](#primeiro-commit).
-6. Subir para o repositório remoto seguindo os passos de como [Adicionar ao repositório remoto](#adicionando-ao-repositório-remoto)
 
 Após finalizar retorne ao repositório no GitHub. O fork sempre tentará comparar o código com o repositório original, então assim que subir a sua branch nova ele irá recomendar a criação de um pull request no repositório original.
 
