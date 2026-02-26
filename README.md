@@ -6,21 +6,35 @@
 
 ## Índice
 
+**Fundamentos**
 *   [Introdução](#introdução)
 *   [O que é Git?](#o-que-é-git)
+    *   [Para que serve?](#para-que-serve)
+
+**Primeiros Passos**
 *   [Primeiros Passos](#primeiros-passos)
     *   [Criando uma Conta no GitHub](#criando-uma-conta-no-github)
-        *   [Criando um Repositório](#criando-um-repositório)
-    *   [Instalando o git](#instalando-o-git-na-maquina)
-        *   [Configurando o Git na Maquina Local](#configurando-o-git-na-maquina-local)
+    *   [Criando um Repositório](#criando-um-repositório)
+    *   [Instalando o Git na máquina](#instalando-o-git-na-maquina)
+    *   [Configurando o Git na Máquina Local](#configurando-o-git-na-maquina-local)
+    *   [Tutorial de linha de comando](#tutorial-de-linha-de-comando)
+    *   [Definir variáveis globais git](#definir-variaveis-globais-git)
+
+**Trabalhando com Git**
 *   [Do Zero ao Merge](#do-zero-ao-merge)
     *   [Primeiros Comandos Git](#primeiros-comandos-git)
-        *   [Como o git funciona](#como-o-git-funciona)
-        *   [Primeiro Commit](#primeiro-commit)
-        *   [Branches](#branches)
-        *   [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
-*   [Clonar Repositórios](#clonar-um-repositório)
-*   [Pull Request](#pull-request---o-que-é-e-por-que-importa)
+    *   [O arquivo .gitignore](#o-arquivo-gitignore)
+    *   [Como o git funciona](#como-o-git-funciona)
+    *   [Primeiro Commit](#primeiro-commit)
+    *   [Branches](#branches)
+    *   [Git Stash - Guardando alterações temporariamente](#guardando-alterações-temporariamente-com-git-stash)
+    *   [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
+    *   [Entendendo git fetch e git pull](#entendendo-melhor-o-git-fetch-e-o-git-pull)
+    *   [Mesclando branches (merge)](#mesclando-branches-merge)
+
+**Colaboração**
+*   [Clonar um Repositório](#clonar-um-repositório)
+*   [Pull Request - O que é?](#pull-request---o-que-é-e-por-que-importa)
 *   [Fork](#fork)
     *   [Deixar sua Assinatura](#assinar-projeto)
 
