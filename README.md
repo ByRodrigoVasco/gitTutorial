@@ -39,16 +39,6 @@
     *   [Deixar sua Assinatura](#assinar-projeto)
 
 ---
-* * [Primeiros Comandos Git](#primeiros-comandos-git)
-* * * [Como o git funciona](#como-o-git-funciona)
-* * * [Primeiro Commit](#primeiro-commit)
-* * * [Branches](#branches)
-* * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
-* 
-* [ Clonar um Repositório](#clonar-um-repositório)
-* [Fork](#fork)
-* * [Deixar sua Assinatura](#assinar-projeto)
-
 
 # Introdução
 
@@ -244,8 +234,6 @@ git init
 > Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja vizualizando ative os arquivos ocultos. É nessa pasta que toda mágica do git acontece, **então não apague**.
 
 ---
-Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja visualizando ative os arquivos ocultos.
-É nessa pasta que toda mágica do git acontece, **então não apague**.
 
 ### O arquivo .gitignore
 
@@ -320,7 +308,6 @@ A imagem abaixo demonstra como o fluxo básico de trabalho do Git funciona.
 
 É onde você está agora, onde o trabalho realmente acontece, aqui você pode:
 
-* Criar arquivs
 * Criar arquivos
 * Editar códigos
 * Apagar coisas
@@ -358,7 +345,6 @@ Aqui o git:
 
 ## Primeiro Commit
 
-Atualmente estamos no Working directory, podemos vizualizar o estado dos arquivos com o comando:
 Atualmente estamos no Working directory, podemos visualizar o estado dos arquivos com o comando:
 
 ```bash
@@ -377,7 +363,7 @@ Se quiser adicionar tudo de uma vez (todos os arquivos modificados no diretorio 
 git add .
 ```
 
-Ao utilizar o comando de status novamente, podemos ver que o arquivo foi adicionado ao saging area e está aguardando o proximo commit.
+Ao utilizar o comando de status novamente, podemos ver que o arquivo foi adicionado ao staging area e está aguardando o proximo commit.
 
 ```bash
 git status
@@ -389,7 +375,7 @@ Isso faz com que o nosso ``README.md`` passe para staging area onde podemos regi
 git commit -m "initial commit"
 ```
 
-Pronto agora seu codigo está registrado. Esse e outros registros podem ser vizualizados com o comando:
+Pronto agora seu codigo está registrado. Esse e outros registros podem ser visualizados com o comando:
 
 ```bash
 git log
@@ -593,8 +579,6 @@ Ou seja, quando você faz `git pull`, o Git:
 
 ### Mesclando branches (merge)
 
-### Mesclando branches (merge)
-
 Agora vamos aprender a mesclar ramificações, unir uma branch na outra. Vamos unir nossa branch criada com a nossa main. Basta utilizar os seguintes comandos:
 
 **Trocar de branch:**
@@ -629,7 +613,6 @@ Basta entrar no repositório que deseja, localizar o botão ``code`` na parte di
 ![Clone.png](assets/images/Clone.png)
 
 **Usar o seguinte comando para clonar repositórios:**
-**E usar o seguinte comando para clonar repositórios:**
 ```bash
 git clone <link do repositório>
 ```
@@ -690,12 +673,6 @@ Agora basta seguir os passos que aprendeu:
 **6.** Subir para o repositório remoto seguindo os passos de como [Adicionar ao repositório remoto](#adicionando-ao-repositório-remoto)
 
 ### Criar o Pull Request
-1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-um-repositório).
-2. Criar uma branch seguindo os passos de como [Criar uma Branch](#branches).
-3. Acessar o arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
-4. Deixar sua assinatura seguindo os passos do arquivo.
-5. Registrar commit da alteração seguindo os passos do [primeiro commit](#primeiro-commit).
-6. Subir para o repositório remoto seguindo os passos de como [Adicionar ao repositório remoto](#adicionando-ao-repositório-remoto)
 
 Após finalizar retorne ao repositório no GitHub. O fork sempre tentará comparar o código com o repositório original, então assim que subir a sua branch nova ele irá recomendar a criação de um pull request no repositório original.
 
