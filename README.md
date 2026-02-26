@@ -141,7 +141,7 @@ Agora com o git instalado e com uma conta criada no GitHub podemos dar inicio ao
 
 ### Vamos começar criando um do absoluto zero:
 
-1. Crie uma pasta no seu computador, pode adicionar o nome que quiser, ele será o nome seu projeto:
+1. Crie uma pasta no seu computador, pode adicionar o nome que quiser, ele será o nome do seu projeto:
 
 **Por [linha de comando](#tutorial-de-linha-de-comando):**
 ```bash
@@ -175,6 +175,64 @@ git init
 
 Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja vizualizando ative os arquivos ocultos.
 É nessa pasta que toda mágica do git acontece, **então não apague**.
+
+### O arquivo .gitignore
+
+Antes de continuar, é **muito importante** falar sobre o arquivo ``.gitignore``. Este arquivo especial diz ao Git quais arquivos ou pastas ele deve **ignorar** e nunca versionar.
+
+**Por que isso é crucial?**
+
+Existem arquivos que você **NUNCA** deve adicionar ao repositório, repetindo **NUUNCA** deve adicionar ao repositório, como por exemplo:
+- **Senhas e chaves secretas** (arquivos `.env`, `config.json` com credenciais)
+- **Dependências** (pasta `node_modules/`, `venv/`, `vendor/`)
+- **Arquivos de configuração da IDE** (`.idea/`, `.vscode/`, `.vs/`)
+- **Arquivos de build** (pasta `dist/`, `build/`, `target/`)
+- Entre outros...
+
+**Como criar um .gitignore:**
+
+Na raiz do seu projeto, caso não encontre, crie um arquivo chamado `.gitignore` e adicione os padrões que deseja ignorar:
+
+```gitignore
+# Dependências
+node_modules/
+venv/
+__pycache__/
+
+# Variáveis de ambiente (SENHAS!)
+.env
+.env.local
+config.json
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.swp
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.log
+```
+
+**Exemplo pelo terminal:**
+
+```bash
+# Criar o arquivo .gitignore
+echo "node_modules/" > .gitignore
+echo ".env" >> .gitignore
+```
+
+Depois de criar o `.gitignore`, o correto é adicionar ele ao staging area e realizar um commit para que ele passe a fazer parte do histórico do projeto e atuar como um filtro para os arquivos que não devem ser versionados.
+
+
+**Dica:** Você pode encontrar templates prontos de `.gitignore` para diferentes linguagens em [gitignore.io](https://www.toptal.com/developers/gitignore/)
+
+**IMPORTANTE:** Se você já commitou um arquivo que deveria ser ignorado, apenas adicionar no `.gitignore` não vai removê-lo do histórico. Você precisará usar `git rm --cached nome-do-arquivo` para removê-lo do rastreamento.
 
 ### Como o git funciona
 Agora vamos entender como a **mágica** do git funciona:
