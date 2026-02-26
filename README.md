@@ -17,7 +17,7 @@
 * * * [Branches](#branches)
 * * * [Adicionando ao repositório remoto](#adicionando-ao-repositório-remoto)
 * 
-* [Conar Repositórios](#clonar-um-repositório)
+* [ Clonar um Repositório](#clonar-um-repositório)
 * [Fork](#fork)
 * * [Deixar sua Assinatura](#assinar-projeto)
 
@@ -173,7 +173,7 @@ Agora é a hora de utilizarmos o git.
 git init
 ```
 
-Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja vizualizando ative os arquivos ocultos.
+Esse comando irá inicializar o seu repositório, você vai notar que foi criado uma pasta chamada ``.git``, caso não esteja visualizando ative os arquivos ocultos.
 É nessa pasta que toda mágica do git acontece, **então não apague**.
 
 ### Como o git funciona
@@ -185,9 +185,9 @@ A imagem abaixo demonstra como o fluxo básico de trabalho do Git funciona.
 ### 1. Working Directory
 
 É onde você está agora, onde o trabalho realmente acontece, aqui você pode:
-* Criar arquivs
+* Criar arquivos
 * Editar códigos
-* apagar coisas
+* Apagar coisas
 * testar ideias
 
 Nada que é feito aqui está salvo no histórico do Git, ainda. São apenas mudanças locais.
@@ -216,7 +216,7 @@ Aqui o git:
 **Editar -> Preparar -> Registrar**
 
 ## Primeiro Commit
-Atualmente estamos no Working directory, podemos vizualizar o estado dos arquivos com o comando:
+Atualmente estamos no Working directory, podemos visualizar o estado dos arquivos com o comando:
 
 ```bash
 git status
@@ -225,7 +225,7 @@ git status
 Para passar nossos arquivos para o staging area utilizamos o comando:
 
 ```bash
-git add ".\README.md"
+git add "README.md"
 ```
 
 Ao utilizar o comando de status novamente, podemos ver que o arquivo foi adicionado ao saging area e está aguardando o proximo commit.
@@ -250,6 +250,20 @@ git log
 ## Branches
 Existe uma forma de criar uma linha paralela de desenvolvimento que permite criar novas funcionalidades sem afetar o registro principal, chamamos isso de Branches (Ramificações).
 Normalmente trabalhamos em branches separadas da principal para evitar conflitos de código, erros inesperados e até para testar novas ideias sem interferir com a ramificação principal.
+
+### O que é HEAD?
+
+Antes de trabalhar com branches, é importante entender um conceito fundamental: o **HEAD**. 
+
+O HEAD é um "apontador" (pointer) que indica qual é a **branch atual em que você está trabalhando**. Pense no HEAD como um marcador que diz "você está aqui".
+
+Quando você executa o comando `git checkout` para mudar de branch, o HEAD "se move" para apontar para a nova branch. Por exemplo:
+
+- Você está na branch `main` → HEAD aponta para `main`
+- Você executa `git checkout "minha-branch"` → HEAD agora aponta para `minha-branch`
+- Qualquer novo commit que você fizer será adicionado onde o HEAD está apontando
+
+Você pode sempre verificar em qual branch (ou seja, onde o HEAD está apontando) usando o comando `git status`. Ele vai te mostrar algo como: `On branch main` ou `On branch minha-branch`.
 
 **Comando para criar a ramificação:**
 ```bash
@@ -278,7 +292,7 @@ git remote add origin <link do repositório>
 ```
 ``origin`` é o apelido que daremos ao local que estamos subindo nosso repositório.
 
-Por fim com o nosso repositório local conectaco ao remoto do GitHub podemos "empurrar" nossas alterações com o comando ``push``.
+Por fim com o nosso repositório local conectado ao remoto do GitHub podemos "empurrar" nossas alterações com o comando ``push``.
 
 *IMPORTANTE:* Antes de realizar o push, precisamos ``SEMPRE`` alinhar o nosso repositório local com o remoto para evitar conflitos, para isso usamos o comando ``pull``.
 
@@ -321,7 +335,7 @@ Basta entrar no repositório que deseja, localizar o botão ``code`` na parte di
 
 ![Clone.png](assets/images/Clone.png)
 
-**E usar o seguinte comando ara clonar repositórios:**
+**E usar o seguinte comando para clonar repositórios:**
 ```bash
 git clone <link do repositório>
 ```
@@ -352,7 +366,7 @@ Após clicar nele você será redirecionado para a pagina de criação do fork, 
 
 Agora Basta seguir os passos que aprendeu
 
-1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-repositório).
+1. Clonar o repositório seguindo os passos de como [Clonar um repositório](#clonar-um-repositório).
 2. Criar uma branch seguindo os passos de como [Criar uma Branch](#branches).
 3. Acessar o arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
 4. Deixar sua assinatura seguindo os passos do arquivo.
