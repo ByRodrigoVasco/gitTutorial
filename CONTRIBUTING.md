@@ -17,3 +17,8 @@ Mantenedor do repositório =)
 ### Rafael Andrade - 29/01/2026
 Engenheiro de Software
 - Email: rafaelgrga11@gmail.com
+
+
+### Vinicius Scandura - 26/02/2026
+Engenheiro de Software
+- Email: viniciusscandura@gmail.com
