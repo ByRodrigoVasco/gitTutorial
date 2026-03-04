@@ -22,3 +22,7 @@ Engenheiro de Software
 ### Vinicius Scandura - 26/02/2026
 Engenheiro de Software
 - Email: viniciusscandura@gmail.com
+
+### Laura Brayner - 04/03/2026
+Analista e Desenvolvedora de Sistemas
+- Email: laurabekinha2@gmail.com
