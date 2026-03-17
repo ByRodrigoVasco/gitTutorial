@@ -145,6 +145,13 @@ No seu computador, abra o terminal de comando.
 A linha de comando é a principal forma de interagir com o sistema operacional, vamos primeiro nos familiarizar com ela antes de continuar.
 Vamos usar alguns comandos. É importante saber que dependendo do sistema que está executando seja Windows ou Mac, os comandos podem ser diferentes. Porem, linux e o mac possuem o mesmo gerenciador de pacotes *nix, portanto podem ter os mesmos comandos.
 
+### Atalhos para abrir o terminal de comando:
+- **Windows**: Tecla Win + R → digite `cmd` → Enter
+- **macOS**: Command + Space → digite `Terminal` → Enter
+- **Linux**: Ctrl + Alt + T
+
+### Tabela de comandos básicos:
+
 | \\*nix (Linux / macOS) | Windows    | O que faz |
 |:----------------------:|:----------:|:----------|
 |         `pwd`          | `echo %cd%`| Mostra o diretório atual (onde você está). |
@@ -163,6 +170,8 @@ Vamos usar alguns comandos. É importante saber que dependendo do sistema que es
 ## Definir variaveis globais git
 
 Quando formos utilizar o git, vamos precisar realizar commits, e precisamos rotular esses commits para saber por quem eles foram feitos, tipo uma assinatura.
+
+Abra o terminal de comando e digite os seguintes comandos para configurar o git com seu nome e email:
 
 **Diga ao git seu nome:**
 ```bash
