@@ -220,6 +220,11 @@ mkdir "MeuProjeto"
 Abra a pasta e adicione um arquivo de texto chamado ``README.md``, ``.md`` é uma extensão de arquivos [Markdown](https://www.markdownguide.org/getting-started/), uma linguagem de marcação leve, muito utilizada para e descrever aplicações e guiar os usuários. Esse tutorial está todo em Markdown por exemplo.
 
 **Por [linha de comando](#tutorial-de-linha-de-comando):**
+
+```bash
+cd "MeuProjeto"
+```
+em seguida:
 ```bash
 echo "Olá, esse é meu primeiro commit" > README.md
 ```
@@ -264,6 +269,7 @@ Existem arquivos que você **NUNCA** deve adicionar ao repositório, repetindo *
 
 Na raiz do seu projeto, caso não encontre, crie um arquivo chamado `.gitignore` e adicione os padrões que deseja ignorar:
 
+Em seguida adicione os arquivos e pastas que deseja ignorar, por exemplo:
 ```gitignore
 # Dependências
 node_modules/
@@ -290,7 +296,7 @@ build/
 *.log
 ```
 
-**Exemplo pelo terminal:**
+**Por [linha de comando](#tutorial-de-linha-de-comando):**
 
 ```bash
 # Criar o arquivo .gitignore
@@ -298,7 +304,7 @@ echo "node_modules/" > .gitignore
 echo ".env" >> .gitignore
 ```
 
-Depois de criar o `.gitignore`, o correto é adicionar ele ao staging area e realizar um commit para que ele passe a fazer parte do histórico do projeto e atuar como um filtro para os arquivos que não devem ser versionados.
+Depois de criar o `.gitignore`, o correto é adicionar ele ao [staging area](#como-o-git-funciona) e realizar um commit para que ele passe a fazer parte do histórico do projeto e atuar como um filtro para os arquivos que não devem ser versionados.
 
 
 > **Dica:** Você pode encontrar templates prontos de `.gitignore` para diferentes linguagens em [gitignore.io](https://www.toptal.com/developers/gitignore/)
@@ -428,10 +434,14 @@ git branch -a
 
 **Trocar de uma branch para outra:**
 ```bash
-git checkout "nome-da-branch"
+git checkout "nome-da-minha-branch"
 ```
 
-> Agora adicione uma novas alterações no arquivo README.md ou adicione novos e faça um novo commit nessa nova branch para praticar.
+Agora adicione uma novas alterações no arquivo README.md ou adicione novos arquivos e faça um novo commit nessa nova branch para praticar.
+
+```bash
+echo "Esse é meu novo commit" >> README.md
+```
 
 ### Guardando alterações temporariamente com git stash
 
