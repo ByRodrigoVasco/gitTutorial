@@ -130,6 +130,8 @@ Para instalar, basta acessar:
 * Este link para [instalação do Git no Linux](https://git-scm.com/install/linux)
 * Este link para [instalação do Git no Mac](https://git-scm.com/install/mac)
 
+### Tutorial Guanabara: [Instalando o Git](https://youtu.be/NgWExh3bswg?t=148)
+
 ---
 
 ## Configurando o git na maquina local
