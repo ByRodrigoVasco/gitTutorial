@@ -26,3 +26,7 @@ Engenheiro de Software
 ### Laura Brayner - 04/03/2026
 Analista e Desenvolvedora de Sistemas
 - Email: laurabekinha2@gmail.com
+
+### Anderson Campos P Santos - 01/04/2026
+- Cientista da Computação
+- E-mail: acampospsantos@hotmail.com
