@@ -30,3 +30,7 @@ Analista e Desenvolvedora de Sistemas
 ### Anderson Campos P Santos - 01/04/2026
 - Cientista da Computação
 - E-mail: acampospsantos@hotmail.com
+
+### Lucas Henrique - 29/04/2026
+- Desenvolvedor de Software | Eng. de Software & ADS
+- Email: lucashenriquehgm@gmail.com
