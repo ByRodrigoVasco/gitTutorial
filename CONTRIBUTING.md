@@ -10,21 +10,21 @@
 ## Menção Honrosa a Todos os Participantes
 
 ### Rodrigo Vasco - 29/01/2026
-Mantenedor do repositório =)
+- Mantenedor do repositório =)
 - Email: rodrigovasco.dev@gmail.com
 
 
 ### Rafael Andrade - 29/01/2026
-Engenheiro de Software
+- Engenheiro de Software
 - Email: rafaelgrga11@gmail.com
 
 
 ### Vinicius Scandura - 26/02/2026
-Engenheiro de Software
+- Engenheiro de Software
 - Email: viniciusscandura@gmail.com
 
 ### Laura Brayner - 04/03/2026
-Analista e Desenvolvedora de Sistemas
+- Analista e Desenvolvedora de Sistemas
 - Email: laurabekinha2@gmail.com
 
 ### Anderson Campos P Santos - 01/04/2026
@@ -34,3 +34,7 @@ Analista e Desenvolvedora de Sistemas
 ### Lucas Henrique - 29/04/2026
 - Desenvolvedor de Software | Eng. de Software & ADS
 - Email: lucashenriquehgm@gmail.com
+
+## Tales Cavalcanti - 02/06/2026
+- Desenvolvedor Frontend 
+- E-mail: talescavalcanti06@gmail.com
