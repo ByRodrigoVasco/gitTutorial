@@ -35,6 +35,10 @@
 - Desenvolvedor de Software | Eng. de Software & ADS
 - Email: lucashenriquehgm@gmail.com
 
-## Tales Cavalcanti - 02/06/2026
-- Desenvolvedor Frontend 
+### Tales Cavalcanti - 02/06/2026
+- Desenvolvedor Frontend
 - E-mail: talescavalcanti06@gmail.com
+
+### Otávio Leão - 18/06/2026
+- Desenvolvedor FullStack
+- E-mail: otavioslb2005@gmail.com
